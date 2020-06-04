@@ -6,7 +6,7 @@ class InteractiveRecord
 
   def self.table_name
     binding.pry  #Song #=> songs
-      self.to_sym.downcase.pluralize
+      self.to_s.downcase.pluralize
   end
 
 end
