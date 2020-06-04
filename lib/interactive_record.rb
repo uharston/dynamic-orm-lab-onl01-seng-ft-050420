@@ -4,8 +4,7 @@ require 'pry'
 
 class InteractiveRecord
 
-  def self.table_name
-    binding.pry  #Song #=> songs
+  def self.table_name  #Song #=> songs
       self.to_s.downcase.pluralize
   end
 
